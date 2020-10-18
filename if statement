@@ -1,5 +1,5 @@
 ====================================================
-Estrutura base do comando
+Basic Structure of the Command
 ====================================================
 if [ <some test> ]
 then
@@ -9,7 +9,7 @@ else
 fi
 
 ====================================================
-Comparadores
+Operator	x  Description
 ====================================================
 !     EXPRESSION	The EXPRESSION is false.
 -n    STRING	The length of STRING is greater than zero.
