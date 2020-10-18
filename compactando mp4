@@ -1,0 +1,13 @@
+#================================================================================
+# O propósito é que reduzir o tamanho de arquivo de vídeo mp4
+#
+# O arquivo que será reduzido, deve constar no seu nome o sufixo -original.mp4
+#================================================================================
+clear
+for i in *-original.mp4;do first=`echo $i | cut -d"-" -f1`;last=`echo $i | cut -d"." -f2`;newn=`echo $first"."$last`;echo $i;echo $first;echo $last;echo $newn;echo;ffmpeg -i $i -vcodec libx265 -crf 28 $newn;done
+rm -f *-original.mp4
+clear
+ls -lh *.mp4
+cd ..
+echo "------------"
+du -sh
