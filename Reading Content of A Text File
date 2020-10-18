@@ -1,0 +1,11 @@
+======================================================================
+Basic Structure of the Command
+======================================================================
+while read line;
+do 
+  <instruction #1>;
+  <instruction #2>;
+  .
+  .
+  <instruction #n>;
+done < file.txt
